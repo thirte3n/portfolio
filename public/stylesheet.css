@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+}
+
+.project-links {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1.5rem;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+footer img {
+  width: 50px;
+}
