@@ -7,11 +7,16 @@ html, body {
 
 .container {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .project-links {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
+}
+
+.project-links li {
+  padding-bottom: 0.8rem;
 }
 
 ul {

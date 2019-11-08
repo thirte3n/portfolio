@@ -1,0 +1,58 @@
+body {
+  background-color: #C5C6C7;
+}
+
+main {
+  background-color: #1F2833;
+  padding: 5px 8%;
+  margin: -15px 10%;
+  border-radius: 20px;
+  color: #C5C6C7;
+}
+
+div {
+  margin: 20px 0px;
+}
+
+#title {
+  font-family: 'Roboto Slab', serif;
+}
+
+#description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-align: justify;
+}
+
+#comments {
+  height: 60px;
+  width: 99%;
+}
+
+#submit {
+  background-color: #C5C6C7; 
+  border-color: #C5C6C7;
+  border-radius: 8px;
+  text-align: center;
+  padding: 12px 18px;
+  font-size: 18px;
+  color: #1F2833;
+}
+
+.input-field {
+  width: 40%;
+}
+
+.label, .entry-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.form-label {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+}
+
+.wrapper-center {
+  text-align: center;
+}
