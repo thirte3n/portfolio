@@ -1,15 +1,132 @@
 html, body {
   margin: 0;
   padding: 0;
+  border: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
-.container {
+html * {
+  box-sizing: inherit;
+}
+
+section {
+  padding: 5rem 1.5rem;
+}
+
+.hero {
+  font-size: 2rem;
+  height: 60vh;
   display: flex;
-  flex-flow: row wrap;
+  position: relative;
+  padding: 0;
 }
 
+.hero p {
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 5rem;
+  position: absolute;
+  padding: 2rem 0 0 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.introduction p {
+  text-align: center;
+}
+
+.project-list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+.project {
+  padding: 0.75rem;
+  display: block;
+  margin: 0;
+  border: 0;
+}
+
+.project figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project img {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project figure figcaption {
+  display: none;
+  transition: .6s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: .2s ease;
+}
+
+.project figure:hover figcaption {
+  display: block;
+  transition: .6s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 20% 0;
+  z-index: 2;
+}
+
+.project figure:hover .overlay {
+  background-color: #FFF;
+  transition: .6s ease;
+  opacity: 80%;
+}
+
+/* For tablets */
+@media(min-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* For desktop */
+@media(min-width: 1024px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*
 .project-links {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
@@ -17,6 +134,32 @@ html, body {
 
 .project-links li {
   padding-bottom: 0.8rem;
+} */
+
+.bg-light {
+  background-color: #FFF8F2;
+  color: #493826;
+}
+
+.bg-dark {
+  background-color: #493826;
+  color: #FFF8F2;
+}
+
+.color-primary-0 {
+  background-color: #C1A78B
+}
+.color-primary-1 {
+  background-color: #FFF8F2
+}
+.color-primary-2 {
+  background-color: #FFEBD7
+}
+.color-primary-3 {
+  background-color: #89725A
+}
+.color-primary-4 {
+  background-color: #493826
 }
 
 ul {
@@ -30,7 +173,7 @@ ul a {
 }
 
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   padding-bottom: 1.5rem;
 }
