@@ -92,7 +92,9 @@ h2 {
 }
 
 .project figure:hover figcaption {
-  display: block;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
   transition: .6s ease;
   position: absolute;
   top: 0;
@@ -102,14 +104,35 @@ h2 {
   z-index: 1;
   flex: 0 0 100%;
   text-align: center;
-  padding: 20% 0;
+  padding: 1.3rem 0;
   z-index: 2;
 }
 
 .project figure:hover .overlay {
-  background-color: #FFF;
+  background-color: #493826;
   transition: .6s ease;
   opacity: 80%;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: #FFF8F2;
+}
+
+.project-subtext {
+  color: #FFF8F2;
+}
+
+.button {
+  text-decoration: none;
+  color: #FFEBD7;
+  border: #FFF8F2;
+  border-style: solid;
+  background-color: #89725A;
+  border-width: 2px;
+  border-radius: 50px;
+  padding: 0.5rem;
+  margin: 0 33%;
 }
 
 /* For tablets */
@@ -125,16 +148,6 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-/*
-.project-links {
-  font-size: 1.5rem;
-  padding: 1.5rem 2rem;
-}
-
-.project-links li {
-  padding-bottom: 0.8rem;
-} */
 
 .bg-light {
   background-color: #FFF8F2;
