@@ -2,9 +2,9 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html * {
@@ -15,12 +15,24 @@ section {
   padding: 5rem 1.5rem;
 }
 
+.bg-light {
+  background-color: #FFF8F2;
+  color: #493826;
+}
+
+.bg-dark {
+  background-color: #493826;
+  color: #FFF8F2;
+}
+
 .hero {
   font-size: 2rem;
   height: 60vh;
   display: flex;
   position: relative;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .hero p {
@@ -29,7 +41,7 @@ section {
   margin: 0 auto;
 }
 
-.logo {
+.main-logo {
   height: 5rem;
   position: absolute;
   padding: 2rem 0 0 1.5rem;
@@ -39,10 +51,12 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .introduction p {
   text-align: center;
+  line-height: 1.5rem;
 }
 
 .project-list {
@@ -127,18 +141,73 @@ h2 {
   text-decoration: none;
   color: #FFEBD7;
   border: #FFF8F2;
-  border-style: solid;
   background-color: #89725A;
+  border-style: solid;
   border-width: 2px;
   border-radius: 50px;
   padding: 0.5rem;
   margin: 0 33%;
 }
 
+.contact-me * {
+  text-align: center;
+}
+
+.contact-button {
+  color: #FFF8F2;
+  border: #493826;
+  background-color: #493826;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+
+}
+
+.contact-button:hover {
+  transition: .3s ease;
+  color: #493826;
+  border: #493826;
+  background-color: #C1A78B;
+  border-style: solid;
+  border-width: 2px;
+}
+
+footer {
+  border: red 1px;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.logo-container svg {
+  width: 50px;
+  height: auto;
+  margin: 2.5rem .5rem;
+}
+
+.logo-container path {
+  fill: #FFEBD7;
+}
+
+nav li:hover path {
+  transition: .3s ease;
+  fill: #C1A78B;
+}
+
 /* For tablets */
 @media(min-width: 768px) {
   .project-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .introduction p {
+    padding: 0 15%;
   }
 }
 
@@ -147,17 +216,12 @@ h2 {
   .project-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .introduction p {
+    padding: 0 25%;
+  }
 }
 
-.bg-light {
-  background-color: #FFF8F2;
-  color: #493826;
-}
-
-.bg-dark {
-  background-color: #493826;
-  color: #FFF8F2;
-}
 
 .color-primary-0 {
   background-color: #C1A78B
@@ -173,31 +237,4 @@ h2 {
 }
 .color-primary-4 {
   background-color: #493826
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul a {
-  text-decoration: none;
-}
-
-footer {
-  /* position: absolute; */
-  bottom: 0;
-  padding-bottom: 1.5rem;
-}
-
-footer ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  padding: 0 2rem;
-}
-
-footer img {
-  width: 50px;
 }
