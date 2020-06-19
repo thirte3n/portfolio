@@ -10,4 +10,6 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/public/images', express.static(path.join(__dirname, 'public/images')));
+
 app.listen(PORT, () => console.log(`Server listening on ${PORT}`));
