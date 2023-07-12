@@ -2,6 +2,7 @@
   --bg-color-01: #1f2020;
   --bg-color-02: #272a2a;
   --font-color-01: #f1f1f1;
+  --font-size-4xl: 4.209rem;
   --font-size-3xl: 3.157rem;
   --font-size-2xl: 2.369rem;
   --font-size-xl: 1.777rem;
@@ -21,13 +22,24 @@ h6 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: 500;
   box-sizing: border-box;
   color: var(--font-color-01);
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+}
+
 html {
   scrollbar-width: none;
+  font-size: 22px;
+  /* TODO: scroll-snap-type: y mandatory; */
 }
 
 html::-webkit-scrollbar {
@@ -41,10 +53,6 @@ body {
 
 html * {
   box-sizing: inherit;
-}
-
-html {
-  scroll-snap-type: y mandatory;
 }
 
 h2,
@@ -72,7 +80,7 @@ section:nth-child(even) {
   height: 100vh;
   scroll-snap-align: start;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -85,6 +93,10 @@ section:nth-child(even) {
   flex-direction: column;
   justify-content: space-evenly;
   height: 280px;
+}
+
+.font-size-4xl {
+  font-size: var(--font-size-4xl);
 }
 
 .font-size-3xl {
@@ -108,7 +120,7 @@ section:nth-child(even) {
   flex-direction: column;
   align-items: center;
   scroll-snap-align: start;
-  padding: 6rem 0rem;
+  padding: 4.09rem 0rem;
   max-width: 1200px;
   margin: 0 auto;
 }
