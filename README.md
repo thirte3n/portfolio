@@ -4,10 +4,6 @@
 
 https://www.figma.com/file/12uOREA4rkJrXGELg9gKgk/Portfolio---Design-Template-1
 
-## Anti-bot mailto
-
-from <https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/>
-
 ```html
 <form
   action="javascript:location.href=('mail' + 'to' + ':test' + '@domain.com')"
@@ -15,8 +11,6 @@ from <https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website
   <button>Email me</button>
 </form>
 ```
-
-TODO: TO CONTINUE IN THE MORNING / LATER TODAY: Note the pt used in Figma, get the px equivalent nearest the [perfect fourth type scale](https://typescale.com/), adjust the css classes accordingly
 
 ## Fonts
 
