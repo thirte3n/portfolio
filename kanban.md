@@ -18,6 +18,9 @@ Personal portfolio website
   - [ ] Fix font - Note the pt used in Figma, get the px equivalent nearest the [perfect fourth type scale](https://typescale.com/), adjust the css classes accordingly
 - [ ] Add anti-bot mailto
   - [ ] Check <https://css-tricks.com/how-to-safely-share-your-email-address-on-a-website/>
+- [ ] Responsive design
+  - Tools
+    - [ ] Shrink the gap of the tools to adjust for smaller widths
 
 ## Doing
 

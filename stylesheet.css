@@ -116,7 +116,7 @@ section:nth-child(even) {
 }
 
 .section {
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
 }
 
 .section > div:first-child {
@@ -213,13 +213,19 @@ section:nth-child(even) {
 #testimonials-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 14rem;
+}
+
+hr {
+  border-top: 2px solid;
 }
 
 #tools-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  column-gap: 2rem;
 }
 
 .tool {
